@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hey, it's your day!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f0e8;
+            color: #292820;
+            font-family: Georgia, serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 430px;
+            border: 1px solid #292820;
+            padding: 25px;
+            position: relative;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+            font-size: 11px;
+            border-bottom: 1px solid #aaa69b;
+            padding-bottom: 12px;
+        }
+
+        .scribble {
+            font-size: 45px;
+            margin: 35px 0 5px;
+            color: #b45b42;
+            transform: rotate(-4deg);
+        }
+
+        h1 {
+            font-size: 43px;
+            line-height: 0.95;
+            font-weight: normal;
+            margin: 15px 0;
+        }
+
+        .subtitle {
+            font-family: monospace;
+            font-size: 12px;
+            color: #777164;
+        }
+
+        .message {
+            margin-top: 35px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .note {
+            background: #e7dfcc;
+            padding: 17px;
+            margin-top: 25px;
+            font-size: 14px;
+            line-height: 1.7;
+            transform: rotate(1deg);
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 18px;
+            border: 1px solid #292820;
+            background: transparent;
+            color: #292820;
+            font-family: monospace;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        button:hover {
+            background: #292820;
+            color: #f4f0e8;
+        }
+
+        #extra {
+            display: none;
+            margin-top: 20px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .footer {
+            margin-top: 45px;
+            border-top: 1px solid #aaa69b;
+            padding-top: 12px;
+            font-family: monospace;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="top">
+            <span>PERSONAL ARCHIVE</span>
+            <span>NO. 001 / SPECIAL DAY</span>
+        </div>
+
+        <div class="scribble">✳</div>
+
+        <p class="subtitle">A LITTLE REMINDER THAT TODAY IS YOURS.</p>
+
+        <h1>Happy<br>Birthday!</h1>
+
+        <p class="subtitle">Richmond · Nov. 5, 2026</p>
+
+        <div class="message">
+            Hey, you.<br><br>
+
+            Just wanted to leave a little something here
+            to remind you that you're appreciated.
+            I hope life treats you kindly, that you get
+            more reasons to laugh, and that the things
+            you've been quietly wishing for finally find
+            their way to you.
+        </div>
+
+        <div class="note">
+            "Another year of being you.
+            Honestly, that's already something worth celebrating."
+        </div>
+
+        <button onclick="reveal()">one more thing →</button>
+
+        <div id="extra">
+            I hope you never forget how much you matter.
+            Enjoy your day, okay? You deserve it. ♡
+        </div>
+
+        <div class="footer">
+            <span>MADE JUST FOR YOU</span>
+            <span>WITH ♡</span>
+        </div>
+
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById("extra").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
